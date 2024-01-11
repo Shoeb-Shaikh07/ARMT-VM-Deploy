@@ -1,0 +1,40 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "vmName": {
+        "value": "ADO-deployed-LinuxVM02"
+      },
+      "adminUsername": {
+        "value": "$(username)"
+      },
+      "authenticationType": {
+        "value": "password"
+      },
+      "adminPasswordOrKey": {
+        "value": "$(password)"
+      },
+      "ubuntuOSVersion": {
+        "value": "Ubuntu-2004"
+      },
+      "location": {
+        "value": "South Central US"
+      },
+      "vmSize": {
+        "value": "Standard_D2s_v3"
+      },
+      "virtualNetworkName": {
+        "value": "ADO-Vm-Vnet02"
+      },
+      "subnetName": {
+        "value": "Subnet02"
+      },
+      "networkSecurityGroupName": {
+        "value": "ADO-NSG02"
+      },
+      "securityType": {
+        "value": "Standard"
+      }
+    }
+  }
+  
